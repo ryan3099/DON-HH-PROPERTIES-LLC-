@@ -1,67 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DON HH PROPERTIES LLC – Real Estate & Property Management</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+    :root{
+      --primary:#0f5e87;
+      --accent:#0b3f59;
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --text:#22303a;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;background:var(--bg);color:var(--text)}
+    header{
+      background:linear-gradient(135deg,var(--primary),var(--accent));
+      color:#fff;text-align:center;padding:52px 16px
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header h1{margin:0 0 6px;font-size:36px;letter-spacing:.4px}
+    header p{margin:6px 0;opacity:.95}
+    a{color:#fff}
+    .container{max-width:1100px;margin:0 auto;padding:28px 16px}
+    .section{
+      background:var(--card);border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.07);
+      display:flex;gap:28px;padding:22px;margin:22px 0;align-items:center
     }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+    .section:nth-child(odd){flex-direction:row-reverse}
+    .image{flex:1 1 48%;overflow:hidden;border-radius:12px}
+    .image img{width:100%;height:100%;max-height:380px;object-fit:cover;display:block;transform:scale(1.02);transition:transform .35s}
+    .image:hover img{transform:scale(1.06)}
+    .content{flex:1 1 52%}
+    h2{margin:0 0 10px;color:var(--accent);font-size:26px}
+    p{margin:0;line-height:1.65}
+    .badge{display:inline-block;background:#e7f3ff;color:var(--accent);padding:6px 10px;border-radius:30px;font-size:12px;margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.06)}
+    footer{background:#0b1d2a;color:#cfe3f0;text-align:center;padding:24px 14px;margin-top:10px;font-size:14px}
+    @media (max-width:900px){
+      .section{flex-direction:column !important}
+      .image{width:100%}
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
-  </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+<header>
+  <h1>DON HH PROPERTIES LLC</h1>
+  <p>Real Estate • Property Management • Investment Solutions</p>
+  <p>✉️ <a href="mailto:contact@donhhproperties.com">contact@donhhproperties.com</a> &nbsp;|&nbsp; 📞 +1 860-397-2137</p>
+  <p>📍 Moorpark Street, Sherman Oaks, CA 91403, United States</p>
+</header>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+<main class="container">
+
+  <!-- Section 1: Company Overview -->
+  <section class="section">
+    <div class="image">
+      <img src="https://tatarstan.ru/file/news/36_n1934868_big.jpg" alt="DON HH PROPERTIES Office">
+    </div>
+    <div class="content">
+      <span class="badge">About Us</span>
+      <h2>Professional Real Estate Partner</h2>
+      <p>
+        DON HH PROPERTIES LLC offers premium property solutions, specializing in acquisitions, sales,
+        and management services. We deliver tailored strategies to meet both investment and lifestyle goals.
+      </p>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+  <!-- Section 2: Residential Services -->
+  <section class="section">
+    <div class="image">
+      <img src="https://avatars.mds.yandex.net/i?id=2a0000017a097d9de1ca2e6ed0e4139dd615-4055806-images-thumbs&ref=rim&n=33&w=480&h=320" alt="Residential Real Estate">
+    </div>
+    <div class="content">
+      <span class="badge">Residential</span>
+      <h2>Luxury Residential Properties</h2>
+      <p>
+        From single-family homes to high-end condos, we connect buyers and sellers through expert guidance,
+        market insight, and a strong network of real estate professionals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: Commercial Real Estate -->
+  <section class="section">
+    <div class="image">
+      <img src="https://png.pngtree.com/thumb_back/fh260/background/20230321/pngtree-the-businessman-in-the-spotlight-in-business-concept-businessman-in-the-photo-image_2014697.jpg" alt="Commercial Real Estate">
+    </div>
+    <div class="content">
+      <span class="badge">Commercial</span>
+      <h2>Commercial Property Investments</h2>
+      <p>
+        We identify and secure profitable commercial opportunities, from retail spaces to office buildings,
+        ensuring maximum return on investment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 4: Real Estate Development -->
+  <section class="section">
+    <div class="image">
+      <img src="https://www.millerthomson.com/wp-content/uploads/2024/09/Expertise_Real-Estate_Featured.jpg" alt="Real Estate Development">
+    </div>
+    <div class="content">
+      <span class="badge">Development</span>
+      <h2>Property Development & Renovation</h2>
+      <p>
+        We oversee property development and renovation projects from planning to completion,
+        ensuring high-quality standards and compliance with local regulations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 5: Investment Advisory -->
+  <section class="section">
+    <div class="image">
+      <img src="https://i.vuzopedia.ru/storage/app/uploads/public/675/8bb/ae3/6758bbae3260c086956922.jpg" alt="Investment Advisory">
+    </div>
+    <div class="content">
+      <span class="badge">Investments</span>
+      <h2>Investment & Portfolio Management</h2>
+      <p>
+        Our investment advisory team helps clients build, diversify, and manage real estate portfolios
+        for long-term financial success.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <strong>Address</strong><br>
+          Moorpark Street, Sherman Oaks, CA 91403
+        </div>
+        <div class="card">
+          <strong>Contact</strong><br>
+          ✉️ <a href="mailto:contact@donhhproperties.com" style="color:var(--accent)">contact@donhhproperties.com</a><br>
+          📞 +1 860-397-2137
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 DON HH PROPERTIES LLC — All rights reserved
+</footer>
+
 </body>
 </html>
